@@ -3,28 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Form</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Dynamic Form</title>
 </head>
-<body>
-    <div class="container">
-        <h2>Custom Build Form</h2>
-        <form id="customForm">
-            <button type="button" id="addTextField">Add Text Field</button>
-            <button type="button" id="addSelectField">Add Select Field</button>
-            <button type="submit">Save</button>
-            <!-- container for input fileds -->
-            <div id="formFieldsContainer"></div>
+    <body>
+
+        <!-- Container for fields -->
+        <div id="formFieldsContainer"></div>
+        <button id="addTextField">Add Text Field</button>
+        <button id="addSelectField">Add Select Field</button>
+
+        <!-- Modal window for adding a new user's option -->
+        <div class="modal-overlay"></div>
+        <div id="addOptionModal">
+            <label for="optionText">Enter option text:</label>
+            <input type="text" id="optionText" name="optionText">
+            <button type="button" id="saveOption">Save Option</button>
+            <button type="button" id="cancelOption">Cancel</button>
+        </div>
+
+        <!-- Submition -->
+        <form id="submitForm">
+            <button type="submit">Submit</button>
         </form>
 
-        <h3>Form Data Table</h3>
-        <table id="dataTable" border="1">
+        <!-- Table -->
+        <table border="1">
             <thead id="tableHeader"></thead>
             <tbody id="tableBody"></tbody>
         </table>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
