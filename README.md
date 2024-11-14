@@ -20,7 +20,7 @@ The project uses:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd FH Demo Task
+   cd FH-Demo-Task
    ```
 3. Open `index.html` in a browser to start using the Dynamic Form Builder.
 
